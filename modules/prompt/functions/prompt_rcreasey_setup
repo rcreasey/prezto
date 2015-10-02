@@ -49,11 +49,11 @@ function prompt_rcreasey_setup {
 
   # Define prompts.
   #
+  nbsp=$'\u00A0'
   PROMPT='%F{032}${_prompt_rcreasey_pwd}%f${git_info:+${(e)git_info[prompt]}}%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
-  RPROMPT='%B%F{237}%n@%m%f%b'
+  #RPROMPT='$nbsp%B%F{237}%n@%m%f%b'
+  RPROMPT=''
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 }
 
 prompt_rcreasey_setup "$@"
-
-
